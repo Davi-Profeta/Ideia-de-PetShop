@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffdeb3;
+    animation: fadeInAnimation ease 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.nav{
+    border: solid 2px black;
+    height: 15vh;
+}
+
+.nav_itens{
+    display: flex;
+    justify-content: right;
+}
+
+.nav_itens a{
+    text-decoration: none;
+}
+
+.nav_itens ul{
+    list-style-type: none;
+}
+
+.corpo{
+    background-image: linear-gradient(to right, rgba(138, 84, 41, 0.75), rgba(200, 100, 0, 0.4)),
+                    url("/img/index-img.png");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+
