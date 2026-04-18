@@ -5,7 +5,9 @@
 }
 
 body{
-    background-image: linear-gradient(to left, #5f2b0d,#d47e4a);
+    background-image: linear-gradient(to left, rgba(95, 43, 13, 0.65), rgba(212, 124, 74, 0.65)),
+                    url("/img/Site\ petshop\ Clinica\ .png");
+    background-size: cover;
     animation: fadeInAnimation ease 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -20,19 +22,35 @@ body{
     display: flex;
     justify-content: center;
     height: 20vh;
-    border: solid 2px black;
+    align-items: end;
 }
 
-.top{
-    text-decoration: dotted;
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: solid 2px white;
+    border-radius: 20px;
+    height: 2.2rem;
+    width: 20rem;
+    overflow: hidden; /* corta o fundo verde nas pontas */
 }
 
-#ent{
+.ent {
+    flex: 1;          /* Faz o botão ocupar metade do espaço */
+    height: 100%;     /* Ocupa a altura toda da barra */
+    display: flex;   
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.3s; 
 }
 
-#cad{
-    text-decoration: none;
+.ent:hover {
+    background: rgb(222, 228, 222);  
 }
 
 #photo{
@@ -46,7 +64,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 60vh;
-    border: solid 2px black;
 }
 
 .login{
@@ -54,7 +71,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid black;
 }
 
 .em{
