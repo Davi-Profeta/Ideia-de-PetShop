@@ -1,2 +1,2 @@
 # Ideia-de-PetShop
-Exercício de html e css
+Ideia de site para PetShop com funcionalidades simples de HTML e CSS
