@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffdeb3;
+    animation: fadeInAnimation ease 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.nav{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav_itens a{
+    text-decoration: none;
+    margin-right: 3rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.ti-sobre{
+    background-image: linear-gradient(to right ,#ff8716, #fd7613, #942200);
+    height: 25vh;
+    align-items: center;
+    display: flex;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    padding-left: 3rem;
+}
